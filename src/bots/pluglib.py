@@ -184,7 +184,6 @@ def read_index2database(orgpluglist):
             if not plug['topartner']:
                 plug['topartner'] = None
         elif plug['plugintype'] == 'routes':
-            plug['active'] = False
             if 'defer' not in plug:
                 plug['defer'] = False
             else:
